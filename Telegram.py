@@ -9,7 +9,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-# Token del bot de Telegram (reemplázalo con tu token)
+# Token del bot de Telegram 
 TOKEN = "tokentokentokentokentoken"
 
 # Definir el comando /start

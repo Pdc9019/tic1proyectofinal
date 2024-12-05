@@ -21,8 +21,8 @@ GPIO.setwarnings(False)
 # Configuración de los pines del buzzer y LEDs
 BUZZER_PIN = 4
 LED_1 = 21  # LED Rojo para Monóxido de Carbono
-LED_2 = 26  # LED Amarillo para Gas Natural
-LED_3 = 19  # LED Morado para Calidad de Aire
+LED_2 = 26  # LED verde para Gas Natural
+LED_3 = 19  # LED azul para Calidad de Aire
 
 GPIO.setup(BUZZER_PIN, GPIO.OUT)
 GPIO.setup(LED_1, GPIO.OUT)
@@ -103,7 +103,7 @@ try:
         # Lógica de alarmas
         if datos_gas["monoxido_carbono"] > 5000:  # Umbral para Monóxido de Carbono
             activar_alarma(LED_1)
-        if datos_gas["gas_natural"] > 3000:  # Umbral para Gas Natural
+        if datos_gas["gas_natural"] > 6000:  # Umbral para Gas Natural
             activar_alarma(LED_2)
         if datos_gas["calidad_saire"] > 3500:  # Umbral para Calidad de Aire
             activar_alarma(LED_3)
