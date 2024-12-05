@@ -10,7 +10,7 @@ logging.basicConfig(
 )
 
 # Token del bot de Telegram (reemplázalo con tu token)
-TOKEN = "7690093439:AAFOoDann7MUNfAE5wcyuiQ4NdjvgqyDTwM"
+TOKEN = "tokentokentokentokentoken"
 
 # Definir el comando /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
